@@ -1,1 +1,17 @@
+// THESE ARE FOLDERS TO SKIP
+
+[
+    "C:\\Common Files",
+    "C:\\System Volume Information",
+    "C:\\Recovery",
+    "C:\\PerfLogs",
+    "C:\\$Recycle.Bin",
+    "C:\\AMD",
+    "C:\\MSOCache",
+    "C:\\Intel",
+    "C:\\Boot",
+    "C:\\Config.Msi",
+    "C:\\Logs",
+    "C:\\NVIDIA"
+]
 
