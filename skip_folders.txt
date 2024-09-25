@@ -82,3 +82,4 @@ C:\Program Files\WindowsPowerShell
 C:\Program Files\WinHTTrack
 C:\Program Files\Microsoft Visual studio
 C:\Program Files\Malwarebytes
+C:\Program Files\WindowsApps
