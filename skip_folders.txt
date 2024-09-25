@@ -1,0 +1,83 @@
+C:\Windows
+C:$Recycle.Bin
+C:\GOG Games
+C:\Intel
+C:\adobeTemp
+C:\$SysReset
+C:\AMD
+C:\Program Files (x86)
+C:\Program Files (x86)\Common Files
+C:\Program Files (x86)\DearMob
+C:\Program Files (x86)\dotnet
+C:\Program Files (x86)\EasyAntiCheat
+C:\Program Files (x86)\EasyAntiCheat_EOS
+C:\Program Files (x86)\Epic Games
+C:\Program Files (x86)\GOG Galaxy
+C:\Program Files (x86)\Internet Explorer
+C:\Program Files (x86)\Microsoft SDKs
+C:\Program Files (x86)\Microsoft Visual Studio
+C:\Program Files (x86)\Microsoft.NET
+C:\Program Files (x86)\Minecraft Launcher
+C:\Program Files (x86)\MSBuild
+C:\Program Files (x86)\MSI Afterburner
+C:\Program Files (x86)\NuGet
+C:\Program Files (x86)\NVIDIA Corporation
+C:\Program Files (x86)\Overwatch
+C:\Program Files (x86)\Razer
+C:\Program Files (x86)\Realtek
+C:\Program Files (x86)\Reference Assemblies
+C:\Program Files (x86)\Resource Hacker
+C:\Program Files (x86)\RivaTuner Statistics Server
+C:\Program Files (x86)\7-Zip
+C:\Program Files (x86)\Adobe
+C:\Program Files (x86)\AMD
+C:\Program Files (x86)\Battle.net
+C:\Program Files\WinRAR
+C:\Program Files\WSL
+C:\Program Files\7-Zip
+C:\Program Files\Adobe
+C:\Program Files\akuse
+C:\Program Files\Black Tree Gaming Ltd
+C:\Program Files\BorisFX
+C:\Program Files\Common Files
+C:\Program Files\dotnet
+C:\Program Files\EA Games
+C:\Program Files\Eclipse Adoptium
+C:\Program Files\Electronic Arts
+C:\Program Files\File Converter
+C:\Program Files\FileZilla FTP Client
+C:\Program Files\Git
+C:\Program Files\Google
+C:\Program Files\HandBrake
+C:\Program Files\Image-Line
+C:\Program Files\Internet Explorer
+C:\Program Files\Java
+C:\Program Files\JetBrains
+C:\Program Files\Maxon
+C:\Program Files\Maxon Cinema 4D 2023
+C:\Program Files\Maxon Cinema 4D 2024
+C:\Program Files\Maxon Cinema 4D R25
+C:\Program Files\Microsoft MPI
+C:\Program Files\Microsoft SQL Server
+C:\Program Files\MPC-HC
+C:\Program Files\MSBuild
+C:\Program Files\MuMuVMMVbox
+C:\Program Files\nodejs
+C:\Program Files\NVIDIA Corporation
+C:\Program Files\obs-studio
+C:\Program Files\OpenVPN
+C:\Program Files\Oracle
+C:\Program Files\Proton
+C:\Program Files\qBittorrent
+C:\Program Files\Red Giant
+C:\Program Files\Reference Assemblies
+C:\Program Files\REVisionEffects
+C:\Program Files\Spotube
+C:\Program Files\Topaz Labs LLC
+C:\Program Files\Unigine
+C:\Program Files\Upscayl
+C:\Program Files\VideoLAN
+C:\Program Files\Windows NT
+C:\Program Files\WindowsPowerShell
+C:\Program Files\WinHTTrack
+C:\Program Files\Microsoft Visual Studio
