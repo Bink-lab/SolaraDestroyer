@@ -80,4 +80,5 @@ C:\Program Files\VideoLAN
 C:\Program Files\Windows NT
 C:\Program Files\WindowsPowerShell
 C:\Program Files\WinHTTrack
-C:\Program Files\Microsoft Visual Studio
+C:\Program Files\Microsoft Visual studio
+C:\Program Files\Malwarebytes
