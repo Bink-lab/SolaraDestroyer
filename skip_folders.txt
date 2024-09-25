@@ -83,3 +83,49 @@ C:\Program Files\WinHTTrack
 C:\Program Files\Microsoft Visual studio
 C:\Program Files\Malwarebytes
 C:\Program Files\WindowsApps
+C:\ProgramData\WinZip
+C:\ProgramData\.MUMUVMM
+C:\ProgramData\Adobe
+C:\ProgramData\aescripts
+C:\ProgramData\Battle.net
+C:\ProgramData\Battle.net_components
+C:\ProgramData\Blizzard Entertainment
+C:\ProgramData\BorisFX
+C:\ProgramData\CreamInstaller
+C:\ProgramData\dbg
+C:\ProgramData\EA Desktop
+C:\ProgramData\Electronic Arts
+C:\ProgramData\Epic
+C:\ProgramData\Frostbite
+C:\ProgramData\GenArts
+C:\ProgramData\GIGABYTE
+C:\ProgramData\GOG.com
+C:\ProgramData\HitmanPro
+C:\ProgramData\INTL
+C:\ProgramData\KeyAuth
+C:\ProgramData\Malwarebytes
+C:\ProgramData\Maxon
+C:\ProgramData\Microsoft
+C:\ProgramData\Microsoft DevDiv
+C:\ProgramData\Microsoft OneDrive
+C:\ProgramData\Mozilla-1de4eec8-1241-4177-a864-e594e8d1fb38
+C:\ProgramData\Norton
+C:\ProgramData\NortonInstaller
+C:\ProgramData\NVIDIA
+C:\ProgramData\NVIDIA Corporation
+C:\ProgramData\obs-studio
+C:\ProgramData\obs-studio-hook
+C:\ProgramData\Oculus
+C:\ProgramData\Oracle
+C:\ProgramData\Origin
+C:\ProgramData\Razer
+C:\ProgramData\Red Giant
+C:\ProgramData\redshift
+C:\ProgramData\regid.1991-06.com.microsoft
+C:\ProgramData\Reprise
+C:\ProgramData\ReShade
+C:\ProgramData\Topaz Labs LLC
+C:\ProgramData\Ubisoft
+C:\ProgramData\UniqueId
+C:\ProgramData\WindowsHolographicDevices
+C:\ProgramData\WindowsPerformanceRecorder
