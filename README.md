@@ -1,5 +1,5 @@
 
-![Logo](https://github.com/Bink-lab/SolaraDestroyer/blob/main/afbeelding_2024-09-01_205724141-removebg-preview.png?raw=true)
+![Logo](https://github.com/Bink-lab/SolaraDestroyer/blob/main/LOGO.png?raw=true)
 
 
 # Solara Destroyer
