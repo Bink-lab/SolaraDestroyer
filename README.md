@@ -23,9 +23,9 @@ For the .py
     
 ## Screenshot
 
-![App Screenshot](https://github.com/Bink-lab/SolaraDestroyer/blob/main/Schermafbeelding%202024-09-01%20205158.png?raw=true)
+![App Screenshot](https://github.com/Bink-lab/SolaraDestroyer/blob/main/preview2.png?raw=true)
 
-![App Screenshot](https://github.com/Bink-lab/SolaraDestroyer/blob/main/afbeelding_2024-09-01_210358438.png?raw=true)
+![App Screenshot](https://github.com/Bink-lab/SolaraDestroyer/blob/main/preview1?raw=true)
 
 ![App Screenshot](https://github.com/Bink-lab/SolaraDestroyer/blob/main/image.png?raw=true)
 

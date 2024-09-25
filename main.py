@@ -2,6 +2,7 @@ import os
 import time
 import ctypes
 import sys
+import requests
 
 print(""" $$$$$$\   $$$$$$\  $$\        $$$$$$\  $$$$$$$\   $$$$$$\        $$$$$$$$\ $$\   $$\  $$$$$$\  $$\   $$\ $$$$$$$$\ $$$$$$$\  
 $$  __$$\ $$  __$$\ $$ |      $$  __$$\ $$  __$$\ $$  __$$\       $$  _____|$$ |  $$ |$$  __$$\ $$ | $$  |$$  _____|$$  __$$\ 
@@ -22,35 +23,53 @@ def is_admin():
     except:
         return False
 
-# Function to count all files in the directory with a timer
-def count_files_with_timer(root_dir):
-    start_time = time.time()
-    total_files = 0
+# Function to load skip folders from a GitHub URL
+def load_skip_folders(github_url='https://raw.githubusercontent.com/bink-lab/solaradestroyer/main/skip_folders.txt'):
+    try:
+        response = requests.get(github_url)
+        response.raise_for_status()  # Raise an error for bad responses
+        return [os.path.normcase(line.strip()) for line in response.text.splitlines() if line.strip()]
+    except Exception as e:
+        print(f"Error reading skip folders from GitHub: {e}")
+        return []
 
-    for root, dirs, files in os.walk(root_dir):
-        total_files += len(files)
-        
-        # Calculate the elapsed time
-        current_time = time.time()
-        elapsed_time = int(current_time - start_time)
-
-        # Print the elapsed time on the same line
-        print(f"\rAnalyze time: {elapsed_time} seconds", end="")
-    
-    print()  # Move to the next line after completion
-    return total_files, elapsed_time
-
-# Function to scan for files with 'solara' in the filename
-def scan_for_solara_files(root_dir):
+# Function to scan for 'solara' in filenames and contents (for files < 10MB)
+def scan_for_solara_files(root_dir, skip_folders, max_size_mb=10):
     found_files = []
+    large_files = []
+
     for root, dirs, files in os.walk(root_dir):
+        # Normalize the current directory path to lowercase
+        normalized_root = os.path.normcase(root)
+        
+        # Skip directories listed in skip_folders
+        if any(normalized_root.startswith(os.path.normcase(skip_folder)) for skip_folder in skip_folders):
+            continue  # Skip without printing
+        
         for file in files:
             file_path = os.path.join(root, file)
+            file_size_mb = os.path.getsize(file_path) / (1024 * 1024)  # File size in MB
             print(f"Scanned: {file_path}")
+            
+            # Check if 'solara' is in the filename (case-insensitive)
             if "solara" in file.lower():
                 found_files.append((file, file_path))
-                print(f"Found! {file_path} (a file with the word 'solara' in it)")
-    return found_files
+                print(f"Found in filename! {file_path} (a file with the word 'solara' in it)")
+
+            # Scan the contents of files smaller than max_size_mb
+            if file_size_mb <= max_size_mb:
+                try:
+                    with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+                        if 'solara' in f.read().lower():
+                            found_files.append((file, file_path))
+                            print(f"Found in content! {file_path} (a file with 'solara' inside)")
+                except Exception as e:
+                    print(f"Could not read file {file_path}: {e}")
+            else:
+                large_files.append((file, file_path, file_size_mb))
+
+    return found_files, large_files
+
 
 # Function to save found files to a text file
 def save_to_txt(found_files, output_file):
@@ -81,19 +100,17 @@ def main():
 
     root_dir = "C:\\"
     
-    print("Analyzing the total amount of files...")
-    total_files, elapsed_time = count_files_with_timer(root_dir)
-    print(f"\nFound {total_files} files in {elapsed_time} seconds!")
+    # Load skip folders from GitHub
+    skip_folders = load_skip_folders()
 
-    # Use a standard input instead of keyboard.wait to avoid skipping inputs
-    input("\nPress Enter to start the scanning process...")
-    print("\nStaring the scanning process...")
+    print("\nStarting the scanning process...")
     time.sleep(2)
 
-    found_files = scan_for_solara_files(root_dir)
+    found_files, large_files = scan_for_solara_files(root_dir, skip_folders)
 
     # Display the number of files found
-    print(f"\nTotal files found with 'solara' in the name: {len(found_files)}")
+    print(f"\nTotal files found with 'solara' in the name or content: {len(found_files)}")
+    print(f"Total large files skipped: {len(large_files)}")
 
     if found_files:
         save_choice = input("Would you like to save the found files to a .txt file? (y/n): ").strip().lower()
@@ -108,7 +125,7 @@ def main():
             print("\nAll found files have been deleted!")
             input("Press Enter to exit...")
     else:
-        print("No files with 'solara' in the filename were found.")
+        print("No files with 'solara' in the filename or content were found.")
 
 if __name__ == "__main__":
     main()
